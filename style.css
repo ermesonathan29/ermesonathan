@@ -437,8 +437,16 @@ button {
    Indicadores
    ========================================================================== */
 
+.indicator-block {
+  margin-top: 40px;
+}
+
+.indicator-block-spaced {
+  margin-top: 64px;
+}
+
 .stats-grid {
-  margin-top: 48px;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -450,6 +458,14 @@ button {
 
 @media (min-width: 960px) {
   .stats-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.stats-grid-compact {
+  max-width: 720px;
+}
+
+@media (min-width: 960px) {
+  .stats-grid-compact { grid-template-columns: 1fr 1fr; }
 }
 
 .stat-card {
@@ -582,7 +598,8 @@ button {
    ========================================================================== */
 
 .quote {
-  margin-top: 48px;
+  margin-top: 32px;
+  max-width: 640px;
   padding-left: 24px;
   border-left: 2px solid var(--accent);
 }
