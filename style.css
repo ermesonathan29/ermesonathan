@@ -668,13 +668,30 @@ button {
   line-height: 1.6;
 }
 
+.project-footer {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .project-year {
   display: inline-block;
-  margin-top: 16px;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--muted);
 }
+
+.project-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: opacity var(--transition);
+}
+
+.project-link:hover { opacity: 0.75; }
 
 /* ==========================================================================
    Contact
