@@ -190,6 +190,9 @@ button {
 }
 
 .menu-toggle svg { width: 18px; height: 18px; }
+.menu-toggle .icon-menu-close { display: none; }
+.menu-toggle[aria-expanded="true"] .icon-menu-open { display: none; }
+.menu-toggle[aria-expanded="true"] .icon-menu-close { display: block; }
 
 @media (min-width: 768px) {
   .nav-links { display: flex; }
