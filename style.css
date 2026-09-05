@@ -238,6 +238,44 @@ button {
   padding: 96px 0 48px;
 }
 
+.hero-grid {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 860px) {
+  .hero-grid {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+  }
+
+  .hero-text { flex: 1; }
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background-color: var(--bg-surface);
+}
+
+@media (min-width: 860px) {
+  .hero-photo { width: 260px; height: 260px; }
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .eyebrow {
   font-size: 0.8rem;
   font-weight: 600;
