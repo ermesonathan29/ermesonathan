@@ -755,6 +755,17 @@ button {
   color: var(--muted);
 }
 
+.visitor-counter {
+  margin-top: 10px;
+}
+
+.visitor-counter img {
+  height: 20px;
+  width: auto;
+  filter: grayscale(1) opacity(0.7);
+  vertical-align: middle;
+}
+
 .footer-social {
   display: flex;
   gap: 18px;
