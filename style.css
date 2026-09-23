@@ -640,7 +640,18 @@ button {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 28px;
+  overflow: hidden;
   transition: border-color var(--transition), transform 0.2s ease;
+}
+
+.project-card-image {
+  display: block;
+  width: calc(100% + 56px);
+  margin: -28px -28px 20px -28px;
+  max-width: none;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .project-card:hover {
