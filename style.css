@@ -649,7 +649,7 @@ button {
   width: calc(100% + 56px);
   margin: -28px -28px 20px -28px;
   max-width: none;
-  aspect-ratio: 3 / 4;
+  height: 200px;
   object-fit: cover;
   object-position: top center;
 }
