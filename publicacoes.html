@@ -17,6 +17,14 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     .publicacoes-hero{padding:132px 0 56px;border-bottom:1px solid var(--border)}
+    .publicacoes-hero-inner{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:center}
+    .publicacoes-mark{width:120px;height:120px;display:block}
+    .publicacoes-copy .section-label{margin-bottom:10px}
+    .publicacoes-copy .section-text{margin-top:14px;max-width:760px}
+    @media(max-width:640px){
+      .publicacoes-hero-inner{grid-template-columns:78px 1fr;gap:18px}
+      .publicacoes-mark{width:78px;height:78px}
+    }
     .publication-card{margin-top:40px;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:32px}
     .publication-meta{display:flex;flex-wrap:wrap;gap:10px 18px;margin:16px 0 24px;color:var(--muted);font-size:.88rem}
     .publication-card h2{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.25;letter-spacing:-.02em}
@@ -76,10 +84,23 @@
 
   <main id="main-content" tabindex="-1">
     <section class="publicacoes-hero">
-      <div class="container container-narrow">
-        <p class="section-label">Produção intelectual</p>
-        <h1 class="section-title">Publicações</h1>
-        <p class="section-text">Pesquisas e produções que articulam literatura, linguagem, educação, arte, cultura e Ciência da Informação.</p>
+      <div class="container publicacoes-hero-inner">
+        <svg class="publicacoes-mark" viewBox="0 0 256 256" role="img" aria-label="Ícone de produção acadêmica">
+          <defs>
+            <linearGradient id="grad-cap" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4f8df5"/>
+              <stop offset="100%" stop-color="#356cc0"/>
+            </linearGradient>
+          </defs>
+          <polygon points="128,0 256,101 128,202 0,101" fill="url(#grad-cap)"/>
+          <circle cx="128" cy="181" r="75" fill="#9dbcf2" fill-opacity="0.92"/>
+          <path d="M53 149h150" stroke="#b5cdf7" stroke-width="1.5" opacity="0.75"/>
+        </svg>
+        <div class="publicacoes-copy">
+          <p class="section-label">Produção intelectual</p>
+          <h1 class="section-title">Publicações</h1>
+          <p class="section-text">Pesquisas e produções que articulam literatura, linguagem, educação, arte, cultura e Ciência da Informação.</p>
+        </div>
       </div>
     </section>
 
