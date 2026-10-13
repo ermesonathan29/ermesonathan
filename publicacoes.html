@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publicações — Ermeson Nathan Alves</title>
+  <meta name="description" content="Publicações acadêmicas e produção intelectual de Ermeson Nathan Alves." />
+  <link rel="canonical" href="https://ermesonathan.com/publicacoes.html" />
+  <meta property="og:title" content="Publicações — Ermeson Nathan Alves" />
+  <meta property="og:description" content="Literatura, cinema, educação, linguagem e pesquisa acadêmica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ermesonathan.com/publicacoes.html" />
+  <meta property="og:image" content="https://ermesonathan.com/assets/og-image.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .publicacoes-hero{padding:132px 0 56px;border-bottom:1px solid var(--border)}
+    .publication-card{margin-top:40px;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:32px}
+    .publication-meta{display:flex;flex-wrap:wrap;gap:10px 18px;margin:16px 0 24px;color:var(--muted);font-size:.88rem}
+    .publication-card h2{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.25;letter-spacing:-.02em}
+    .publication-card p{margin-top:18px;color:var(--muted);line-height:1.8}
+    .publication-topics{margin:24px 0 0;display:grid;gap:10px}
+    .publication-topics li{padding-left:18px;position:relative;color:var(--muted)}
+    .publication-topics li::before{content:"";position:absolute;left:0;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+    .publication-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .publication-note{font-size:.82rem;color:var(--muted)}
+  </style>
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || 'system';
+        if (theme === 'system') {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a href="index.html#inicio" class="logo" aria-label="Ermeson Nathan — Início">Ermeson Nathan</a>
+
+      <ul class="nav-links" role="list" id="nav-links">
+        <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+        <li><a href="index.html#curriculo" class="nav-link">Currículo</a></li>
+        <li><a href="index.html#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="publicacoes.html" class="nav-link active-link">Publicações</a></li>
+        <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Alternar tema claro/escuro">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5"></circle>
+            <path d="M12 2.5v2M12 19.5v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2.5 12h2M19.5 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M20.5 14.7A8.5 8.5 0 1 1 9.3 3.5a7 7 0 0 0 11.2 11.2Z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg class="icon-menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 17h16"></path></svg>
+          <svg class="icon-menu-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6l-12 12"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="publicacoes-hero">
+      <div class="container container-narrow">
+        <p class="section-label">Produção intelectual</p>
+        <h1 class="section-title">Publicações</h1>
+        <p class="section-text">Pesquisas e produções que articulam literatura, linguagem, educação, arte, cultura e Ciência da Informação.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="publication-card">
+          <div class="project-tag">Trabalho de Conclusão de Curso · 2026</div>
+          <h2>Da palavra à imagem: literatura e cinema em <em>A Hora da Estrela</em>, de Clarice Lispector</h2>
+
+          <div class="publication-meta">
+            <span><strong>Autor:</strong> Ermeson Nathan Pereira Alves</span>
+            <span><strong>Especialização:</strong> Língua Portuguesa, Literatura e Artes</span>
+            <span><strong>Pesquisa:</strong> qualitativa, exploratória e bibliográfica</span>
+          </div>
+
+          <p>O estudo analisa o diálogo entre <em>A Hora da Estrela</em>, de Clarice Lispector, e sua adaptação cinematográfica dirigida por Suzana Amaral. A pesquisa investiga como a narrativa literária é reinterpretada pela linguagem audiovisual e como palavra, imagem, som, montagem e performance produzem novos sentidos para a trajetória de Macabéa.</p>
+
+          <p>A análise foi organizada em três eixos: a representação de Macabéa, a transposição da linguagem literária para a cinematográfica e as representações sociais e culturais do Nordeste. O trabalho também discute invisibilidade social, desigualdade, migração nordestina, identidade, deslocamento e marginalização.</p>
+
+          <ul class="publication-topics">
+            <li>Literatura brasileira e adaptação cinematográfica</li>
+            <li>Clarice Lispector e <em>A Hora da Estrela</em></li>
+            <li>Macabéa, subjetividade e invisibilidade social</li>
+            <li>Representações sociais e culturais do Nordeste</li>
+            <li>Diálogo entre palavra escrita e linguagem audiovisual</li>
+          </ul>
+
+          <div class="publication-actions">
+            <a class="btn btn-primary" href="assets/Clarice_Cinema_Artigo.pdf" target="_blank" rel="noopener noreferrer">Ler artigo completo em PDF</a>
+            <a class="btn btn-secondary" href="index.html">Voltar ao site</a>
+          </div>
+          <p class="publication-note">Artigo desenvolvido como Trabalho de Conclusão de Curso da especialização em Língua Portuguesa, Literatura e Artes.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <p>© <span id="year"></span> Ermeson Nathan Alves</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/ermesonathan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="http://lattes.cnpq.br/3595152758580670" target="_blank" rel="noopener noreferrer">Lattes</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
